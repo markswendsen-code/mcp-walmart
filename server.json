@@ -1,0 +1,23 @@
+{
+  "mcpName": "io.github.markswendsen-code/walmart",
+  "name": "@striderlabs/mcp-walmart",
+  "version": "0.1.0",
+  "description": "MCP server connector for Walmart retail shopping — search products, manage cart, track orders via browser automation",
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["@striderlabs/mcp-walmart"],
+  "tools": [
+    "status",
+    "login",
+    "logout",
+    "set_address",
+    "search",
+    "get_product",
+    "add_to_cart",
+    "view_cart",
+    "update_cart",
+    "remove_from_cart",
+    "checkout",
+    "get_orders"
+  ]
+}

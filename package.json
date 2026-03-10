@@ -1,0 +1,49 @@
+{
+  "name": "@striderlabs/mcp-walmart",
+  "version": "0.1.0",
+  "description": "MCP server connector for Walmart retail shopping — search products, manage cart, track orders",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-walmart": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "walmart",
+    "shopping",
+    "grocery",
+    "retail",
+    "ai-agent"
+  ],
+  "author": "Strider Labs <hello@striderlabs.ai>",
+  "license": "MIT",
+  "homepage": "https://striderlabs.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markswendsen-code/mcp-walmart.git"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "playwright": "^1.52.0",
+    "playwright-extra": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
