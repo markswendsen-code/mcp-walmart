@@ -1,7 +1,7 @@
 {
   "name": "@striderlabs/mcp-walmart",
   "version": "0.1.0",
-  "description": "MCP server connector for Walmart retail shopping — search products, manage cart, track orders",
+  "description": "MCP server connector for Walmart retail shopping \u2014 search products, manage cart, track orders",
   "main": "dist/index.js",
   "bin": {
     "mcp-walmart": "dist/index.js"
@@ -33,7 +33,7 @@
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
-    "playwright": "^1.52.0",
+    "patchright": "^1.58.2",
     "playwright-extra": "^4.3.6"
   },
   "devDependencies": {
@@ -45,5 +45,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "mcpName": "io.github.markswendsen-code/walmart"
 }
