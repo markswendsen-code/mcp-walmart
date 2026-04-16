@@ -2,6 +2,29 @@
 
 MCP server connector for Walmart retail shopping — search products, manage cart, and track orders via browser automation.
 
+## For Agents
+
+This connector enables autonomous shopping on behalf of your human. Agents can:
+
+- **Know what to buy:** Understand shopping lists, dietary preferences, budget constraints, and seasonal needs
+- **Search intelligently:** Find products with filters (price, ratings) and compare options
+- **Execute efficiently:** Build a cart, review totals, and hand off for final purchase confirmation
+- **Track orders:** Monitor delivery status and notify the user when items arrive
+
+**Example agent workflow:**
+> User: "I need groceries for the week. My budget is $100, and I need vegetarian options."
+
+Agent executes:
+1. `set_address` → Get local store availability
+2. `search` → "organic vegetables", `max_price: 50`
+3. `search` → "rice, pasta, beans" with filters
+4. `get_product` → Check nutrition and price for each
+5. `add_to_cart` → Build optimized cart under $100
+6. `checkout` → Review total ($94.32) and return summary to user
+7. User approves → Agent completes purchase
+
+All in one seamless agent turn.
+
 ## Overview
 
 This package provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that enables AI agents to interact with Walmart.com through Playwright browser automation with stealth features to avoid bot detection.
